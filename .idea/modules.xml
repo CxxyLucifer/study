@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cxxy-study.iml" filepath="$PROJECT_DIR$/cxxy-study.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-common/study-common.iml" filepath="$PROJECT_DIR$/study-common/study-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-dal/study-dal.iml" filepath="$PROJECT_DIR$/study-dal/study-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-model/study-model.iml" filepath="$PROJECT_DIR$/study-model/study-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-service/study-service.iml" filepath="$PROJECT_DIR$/study-service/study-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/study-web/study-web.iml" filepath="$PROJECT_DIR$/study-web/study-web.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="study-common" />
+        <module name="study-dal" />
+        <module name="study-model" />
+        <module name="study-service" />
+        <module name="study-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cxxy-study" target="1.8" />
+      <module name="study-common" target="1.8" />
+      <module name="study-dal" target="1.8" />
+      <module name="study-dao" target="1.8" />
+      <module name="study-model" target="1.8" />
+      <module name="study-service" target="1.8" />
+      <module name="study-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
