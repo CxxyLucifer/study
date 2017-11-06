@@ -5,6 +5,8 @@
 # IntelliJ project files
 out
 gen
+study-api/target/
+study-consumer/target/
 study-common/target/
 study-dal/target/
 study-model/target/
