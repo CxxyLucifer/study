@@ -16,6 +16,8 @@
         <module>study-dal</module>
         <module>study-service</module>
         <module>study-web</module>
+        <module>study-api</module>
+        <module>study-consumer</module>
     </modules>
     <packaging>pom</packaging>
 
