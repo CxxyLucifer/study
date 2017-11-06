@@ -32,6 +32,9 @@
         <activemq.version>5.7.0</activemq.version>
         <redis.version>2.7.3</redis.version>
         <spring.redis.version>1.6.0.RELEASE</spring.redis.version>
+        <activemq.version>5.7.0</activemq.version>
+        <redis.version>2.9.0</redis.version>
+        <spring.redis.version>2.0.1.RELEASE</spring.redis.version>
     </properties>
 
     <dependencyManagement>
@@ -196,6 +199,26 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+
+            <!-- ActiveMQ 依赖 -->
+            <dependency>
+                <groupId>org.apache.activemq</groupId>
+                <artifactId>activemq-core</artifactId>
+                <version>${activemq.version}</version>
+            </dependency>
+
+            <!-- Redis 依赖 -->
+            <dependency>
+                <groupId>org.springframework.data</groupId>
+                <artifactId>spring-data-redis</artifactId>
+                <version>${spring.redis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${redis.version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
