@@ -6,7 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="study-api" />
         <module name="study-common" />
+        <module name="study-consumer" />
         <module name="study-dal" />
         <module name="study-model" />
         <module name="study-service" />
@@ -15,7 +17,9 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cxxy-study" target="1.8" />
+      <module name="study-api" target="1.8" />
       <module name="study-common" target="1.8" />
+      <module name="study-consumer" target="1.8" />
       <module name="study-dal" target="1.8" />
       <module name="study-dao" target="1.8" />
       <module name="study-model" target="1.8" />

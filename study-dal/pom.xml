@@ -16,6 +16,11 @@
     <dependencies>
         <dependency>
             <groupId>com.cxxy</groupId>
+            <artifactId>study-api</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.cxxy</groupId>
             <artifactId>study-model</artifactId>
         </dependency>
 

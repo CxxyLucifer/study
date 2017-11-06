@@ -11,6 +11,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/study-api/pom.xml" />
         <option value="$PROJECT_DIR$/study-dao/pom.xml" />
       </set>
     </option>

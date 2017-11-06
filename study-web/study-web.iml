@@ -30,6 +30,7 @@
     <orderEntry type="module" module-name="study-common" />
     <orderEntry type="module" module-name="study-service" />
     <orderEntry type="module" module-name="study-dal" />
+    <orderEntry type="library" name="Maven: com.cxxy:study-api:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.4.5" level="project" />
     <orderEntry type="library" name="Maven: org.mybatis:mybatis-spring:1.3.1" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:8.0.8-dmr" level="project" />
