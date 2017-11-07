@@ -4,9 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cxxy-study.iml" filepath="$PROJECT_DIR$/cxxy-study.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-api/study-api.iml" filepath="$PROJECT_DIR$/study-api/study-api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/study-api/study-api.iml" filepath="$PROJECT_DIR$/study-api/study-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-common/study-common.iml" filepath="$PROJECT_DIR$/study-common/study-common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/study-consumer/study-consumer.iml" filepath="$PROJECT_DIR$/study-consumer/study-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-consumer/study-consumer.iml" filepath="$PROJECT_DIR$/study-consumer/study-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-dal/study-dal.iml" filepath="$PROJECT_DIR$/study-dal/study-dal.iml" />
       <module fileurl="file://$PROJECT_DIR$/study-model/study-model.iml" filepath="$PROJECT_DIR$/study-model/study-model.iml" />

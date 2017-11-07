@@ -16,8 +16,6 @@
         <module>study-dal</module>
         <module>study-service</module>
         <module>study-web</module>
-        <module>study-api</module>
-        <module>study-consumer</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -44,6 +42,11 @@
             <!--项目子模块-->
             <dependency>
                 <groupId>com.cxxy</groupId>
+                <artifactId>study-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.cxxy</groupId>
                 <artifactId>study-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -67,11 +70,7 @@
                 <artifactId>study-service</artifactId>
                 <version>${project.version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.cxxy</groupId>
-                <artifactId>study-web</artifactId>
-                <version>${project.version}</version>
-            </dependency>
+
 
             <!-- Spring包 -->
             <dependency>

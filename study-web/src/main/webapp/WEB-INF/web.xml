@@ -8,12 +8,11 @@
   <!-- Spring配置 -->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:config/spring-mybatis.xml</param-value>
+    <param-value>classpath:spring/spring-mybatis.xml</param-value>
   </context-param>
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-
 
   <!-- Spring MVC -->
   <servlet>
@@ -21,13 +20,18 @@
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>classpath:config/spring-mvc.xml</param-value>
+      <param-value>
+        classpath:spring/spring-mvc.xml,
+        classpath:spring/spring-dobbo.xml,
+        classpath:dobbo/study-provider.xml
+      </param-value>
     </init-param>
   </servlet>
   <servlet-mapping>
     <servlet-name>springmvc</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
 
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
