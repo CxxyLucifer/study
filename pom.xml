@@ -260,6 +260,20 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- maven-jetty插件,方便eclipse集成调试,支持代码修改热部署,可提高开发调试效率 -->
+            <plugin>
+                <groupId>org.mortbay.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <configuration>
+                    <webAppConfig>
+                        <!-- 应用的访问路径 -->
+                        <contextPath>/</contextPath>
+                    </webAppConfig>
+                    <!-- jetty热部署的扫描间隔 -->
+                    <scanIntervalSeconds>5</scanIntervalSeconds>
+                </configuration>
+            </plugin>
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

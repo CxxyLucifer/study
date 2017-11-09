@@ -4,7 +4,7 @@
 
 # IntelliJ project files
 out
-gen
+
 study-api/target/
 study-consumer/target/
 study-common/target/

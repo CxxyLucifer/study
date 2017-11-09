@@ -10,5 +10,5 @@ public interface UserProvider {
      * @return
      * @throws Exception
      */
-    int addUser(UserRequest userRequest) throws Exception;
+    public int addUser(UserRequest userRequest) throws Exception;
 }
