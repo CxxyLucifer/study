@@ -71,7 +71,6 @@
                 <version>${project.version}</version>
             </dependency>
 
-
             <!-- Spring包 -->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -225,8 +224,42 @@
     </dependencyManagement>
 
     <build>
-        <finalName>cxxy-study</finalName>
         <plugins>
+            <!-- maven依赖管理插件,用于分析模块的依赖 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-dependency-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>copy-dependencies</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>copy-dependencies</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.build.directory}/extlib</outputDirectory>
+                            <overWriteReleases>false</overWriteReleases>
+                            <overWriteSnapshots>false</overWriteSnapshots>
+                            <overWriteIfNewer>true</overWriteIfNewer>
+                            <includeScope>compile</includeScope>
+                            <includeScope>runtime</includeScope>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!-- maven打包包含源码插件 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -237,6 +270,7 @@
                 </configuration>
             </plugin>
         </plugins>
+
         <resources>
             <resource>
                 <directory>src/main/java</directory>
@@ -248,11 +282,13 @@
             </resource>
             <resource>
                 <directory>src/main/resources</directory>
-                <!--
-                    <includes> <include>**/*.properties</include>
-                    <include>**/*.xml</include> </includes> <filtering>true</filtering>
-                -->
+                    <includes>
+                        <include>**/*.properties</include>
+                        <include>**/*.xml</include>
+                    </includes>
+                <filtering>true</filtering>
             </resource>
         </resources>
     </build>
+
 </project>

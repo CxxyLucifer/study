@@ -22,8 +22,8 @@
       <param-name>contextConfigLocation</param-name>
       <param-value>
         classpath:spring/spring-mvc.xml,
-        classpath:spring/spring-dobbo.xml,
-        classpath:dobbo/study-provider.xml
+        classpath:spring/spring-dubbo.xml,
+        classpath:dubbo/study-provider.xml
       </param-value>
     </init-param>
   </servlet>
